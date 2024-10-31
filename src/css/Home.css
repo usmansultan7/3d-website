@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+    height: 100%;
+  }
+  
+  .home-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding: 20px; /* Add padding for the content */
+    overflow: hidden; /* Prevents overflow of child elements */
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    min-width: 100%; /* Minimum width */
+    min-height: 100%; /* Minimum height */
+    width: auto; /* Auto width for aspect ratio */
+    height: auto; /* Auto height for aspect ratio */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover; /* Cover the entire container */
+    z-index: -1; /* Position video behind other content */
+  }
+  
+  .content {
+    position: relative;
+    color: #fff; /* Text color */
+    text-align: left; /* Align text to the left */
+    z-index: 1; /* Position above the video */
+    max-width: 600px; /* Optional: limit width of the content */
+  }
+  
+  .lab-heading {
+    color: #ff3b05; /* Text color */
+    text-shadow: 
+      1px 1px 0 #0C1E27,   /* Right bottom white shadow */
+      -1px 1px 0 #0C1E27;  /* Left bottom white shadow */
+    font-size: 2.5rem; /* Heading size */
+    margin: 0; /* Remove default margin */
+    font-family: 'Poppins', sans-serif; /* Use Poppins as the default font */
+}
+  
+  .content p {
+    font-size: 1rem; /* Paragraph size */
+    margin-top: 1rem; /* Margin above the paragraph */
+    font-family: 'Oganesson', sans-serif; /* Use Oganesson font */
+    letter-spacing: 0.07em; /* Adjust the spacing between letters */
+
+  }
+  
+  .action-button {
+    background-color: #ff3b05; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding around the button */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    align-content: center;
+  }
+  
+  .action-button:hover {
+    background-color: #a72d0c; /* Darker shade on hover */
+  }
+  

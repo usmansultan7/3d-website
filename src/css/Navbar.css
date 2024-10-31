@@ -1,0 +1,30 @@
+.navbar {
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white; /* Text color */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding around navbar */
+    z-index: 2; /* Higher z-index than background */
+    font-family: 'Oganesson', sans-serif; /* Use Oganesson font */
+  }
+  
+  .nav-links {
+    padding-left: 150px;
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flex layout */
+    gap: 50px; /* Spacing between links */
+  }
+  
+  .nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-links a:hover {
+    color: #8D130D;
+  }
+  
